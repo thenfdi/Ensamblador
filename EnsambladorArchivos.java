@@ -4,7 +4,7 @@ import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 
-public class EnsambladorArchivosa {
+public class EnsambladorArchivos {
     private String ubicacionArchivos;
 
     public EnsambladorArchivos(String ubicacionArchivos) {
