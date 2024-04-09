@@ -3,7 +3,7 @@ import java.io.FileReader;
 import java.io.IOException;
 
 public class CargarArchivos extends GenerarInforme {
-    public CargarArchivos() {
+    public CargarArchivos() {a
         super();
     }
 
