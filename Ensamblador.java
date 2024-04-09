@@ -19,13 +19,29 @@ public class Ensamblador {
     {
 
     }
+
     public void agregarLibro(Libro libro)
     {
-
+        for(Libro libro: libros) {
+            if (libro.detallesLibro().equals(libro.detallesLibro()))
+            {
+                System.out.println("Este libro ya existe");
+                return;
+            }
+        }
+        libros.add(libro);
+        System.out.println("Libro Registrado");
     }
 
     public void eliminarLibro(Libro libro){
-
+        for (Libro libro : libros) {
+            if (libro.libro.equals(libros)) {
+                System.out.println("Libro eliminado con éxito.");
+                libros.remove(libro);
+                return;
+            }
+        }
+        System.out.println("El libro no existe.");
     }
     public void agregarArchivo(Archivo archivo){
 
@@ -51,4 +67,3 @@ public class Ensamblador {
 
 
 }
-
