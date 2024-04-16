@@ -1,6 +1,8 @@
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Scanner;
 public class Ensamblador {
+    Scanner sc=new Scanner(System.in);
     private ArrayList<Cliente> clientes;
     private ArrayList<Libro> libros;
     private ArrayList<Archivo> archivos;
@@ -11,13 +13,13 @@ public class Ensamblador {
         this.archivos = (ArrayList<Archivo>) archivos;
     }
 
-    public void agregarCliente(Cliente cliente)
+    public void add(Cliente cliente)
     {
-
+        Cliente.add(cliente);
     }
-    public void eliminarCliente(Cliente cliente)
+    public static void remove(Cliente cliente)
     {
-
+        Cliente.remove(cliente);
     }
     public void agregarLibro(Libro libro)
     {
@@ -33,7 +35,14 @@ public class Ensamblador {
     public void eliminarArchivo(Archivo archivo){
 
     }
-    public void buscarClientePorNombre(String nombre){
+    public void buscarClientePorNombre(Scanner sc){
+        System.out.println("Dame el nombre que quieres buscar: ");
+        String Nombre=sc.nextLine();
+        for (Cliente clientes: clientes){
+            if (clientes.getNombre().equals(Nombre)){
+                System.out.println("El cliente buscado es"+clientes.getNombre());
+            }
+        }
 
     }
     public void buscarLibroPorTitulo(String titulo) {
