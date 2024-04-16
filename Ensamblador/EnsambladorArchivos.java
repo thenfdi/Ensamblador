@@ -1,3 +1,5 @@
+package Ensamblador;
+
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.FileReader;
@@ -39,7 +41,7 @@ public class EnsambladorArchivos {
 
     // Ejemplo de uso
     public static void main(String[] args) {
-        String ubicacionArchivos = "datos_tienda_libros.txt";
+        String ubicacionArchivos = "Ensamblador/datos_tienda_libros.txt";
         EnsambladorArchivos ensamblador = new EnsambladorArchivos(ubicacionArchivos);
 
         // Ejemplo de guardar datos
@@ -50,5 +52,6 @@ public class EnsambladorArchivos {
         String datosCargados = ensamblador.cargarDatosDesdeArchivos();
         System.out.println("Datos cargados desde archivos: \n" + datosCargados);
     }
+
 }
 

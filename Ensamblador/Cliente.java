@@ -1,3 +1,5 @@
+package Ensamblador;
+
 public class Cliente {
     String nombre, apellido,direccion, telefono, email;
 

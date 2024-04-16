@@ -1,15 +1,17 @@
+package Ensamblador;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 public class Ensamblador {
     Scanner sc=new Scanner(System.in);
     private ArrayList<Cliente> clientes;
-    private ArrayList<Libro> libros;
+    private ArrayList<Libros> libros;
     private ArrayList<Archivo> archivos;
 
-    public Ensamblador(List<Cliente> clientes, List<Libro> libros, List<Archivo> archivos) {
+    public Ensamblador(List<Cliente> clientes, List<Libros> libros, List<Archivo> archivos) {
         this.clientes = (ArrayList<Cliente>) clientes;
-        this.libros = (ArrayList<Libro>) libros;
+        this.libros = (ArrayList<Libros>) libros;
         this.archivos = (ArrayList<Archivo>) archivos;
     }
 
@@ -21,12 +23,12 @@ public class Ensamblador {
     {
         Cliente.remove(cliente);
     }
-    public void agregarLibro(Libro libro)
+    public void agregarLibro(Libros libro)
     {
 
     }
 
-    public void eliminarLibro(Libro libro){
+    public void eliminarLibro(Libros libro){
 
     }
     public void agregarArchivo(Archivo archivo){
