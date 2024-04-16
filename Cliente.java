@@ -1,5 +1,4 @@
 public class Cliente {
-
     String nombre, apellido,direccion, telefono, email;
 
     public String getNombre() {
