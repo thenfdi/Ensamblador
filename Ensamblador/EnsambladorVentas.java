@@ -1,5 +1,5 @@
 package Ensamblador;
-
+import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -10,4 +10,12 @@ public class EnsambladorVentas extends Ensamblador{
         super(clientes, libros, archivos);
         this.ventas = ventas;
     }
+
+    public static void add(Ventas ventas){
+    }
+
+    public static Ventas agregarVenta(LocalDate fechaVenta, List<Libros> librosVendidos, List<Cliente> clientes) {
+        return new Ventas(fechaVenta, librosVendidos, clientes);
+    }
+
 }
